@@ -11,7 +11,7 @@ const blackKeys = document.querySelectorAll('.black');
             return
         }else{ 
         let item = e.key;
-    
+            item = item.toLowerCase();
     const whiteKeyIndex = white.indexOf(item);
     const blackKeyIndex = black.indexOf(item);
         
