@@ -1,0 +1,36 @@
+@media(max-width:2559px){
+    :root{
+        --width: 8rem;
+    }
+}
+@media(max-width:1439px){
+    :root{
+        --width: 6rem;
+    }
+}
+@media(max-width:1023px){
+    :root{
+        --width: 5rem;
+    }
+}
+@media(max-width:767px){
+    :root{
+        --width: 4.5rem;
+    }
+}
+
+@media(max-width:424px){
+    :root{
+        --width: 4rem;
+    }
+}
+@media(max-width:399px){
+    :root{
+        --width: 3.5rem;
+    }
+}
+@media(max-width:374px){
+    :root{
+        --width: 3rem;
+    }
+}

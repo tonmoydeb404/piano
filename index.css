@@ -1,0 +1,97 @@
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --width : 10rem;
+    
+}
+
+html{
+  font-size: 62.5%;
+}
+
+button,
+button:hover,
+button:active{
+  outline: none;
+}
+
+.piano{
+  width: 100%;
+  min-height: 100vh;
+  background: #37f;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+    flex-direction: column;
+} 
+
+.pianoKey{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0.5rem 0.5rem 2rem rgb(0,0,0,0.3)
+}
+
+.key{
+  border: 0.1rem solid #444;
+  margin: 0;padding: 0;
+}
+
+.white{
+  background: #fff;
+  width: var(--width);
+  height: calc(var(--width) * 4);
+}
+
+.white:hover,
+.white:active{
+  background: #eee;
+}
+
+.white.active{
+    background: #ddd;
+}
+
+.black{
+  background: #222;
+  width: calc(var(--width) / 2);
+  height: calc( (var(--width) / 2) * 6);
+  margin-left: calc(var(--width) / -3.5);
+  margin-right: calc(var(--width) / -3.5);
+  z-index: 2;
+} 
+
+.black:hover,
+.black:active{
+  background: #111;
+}
+
+.black.active{
+    background: #000;
+}
+
+.credit{
+    margin-top: 10rem;
+    text-transform: uppercase;
+    color: #ddd;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+}
+
+.link{
+    color: #ddd;
+    text-decoration: none;
+    padding: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid rgba(0,0,0,0.3);
+    margin: 0;
+    transition: 0.5s;
+}
+
+.link:hover{
+    color: #fff;
+    border-bottom: 0.2rem solid #fff;
+}
